@@ -1,0 +1,192 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+body{
+  background-color: #c6f3ff;
+  font-family: 'Courier New', Courier, monospace;
+}
+#header{
+  position:fixed;
+  top:30px;
+  width:100%;
+  z-index:1;
+}
+#logo-img{
+  width:50px;
+  height: 50px;
+  position: fixed;
+  left: 30px;
+}
+#home-nav{
+  position: fixed;
+  right:100px;
+}
+
+@media screen and (min-width:800px) {
+  #dropdown{
+    display:None;
+  }
+  #nav-buttons{
+    height:50px;
+    background-color: aqua;
+    border-radius: 30px 60px;
+    text-decoration: none;
+    padding: 10px;
+    margin-left: 10px;
+    color: rgba(0, 0, 0, 0.817);
+  }
+  #nav-buttons:hover{
+    height:50px;
+    background-color:rgb(24, 223, 253);
+    border-radius: 30px 60px;
+    text-decoration: none;
+    padding: 10px;
+    margin-left: 10px;
+    color: black;
+  }
+  #about-text{
+    position:fixed;
+    left:50%;
+    top:35%;
+    margin: 10px;
+  }
+}
+@media screen and (max-width:800px) {
+  #home-nav{
+    display: none;
+  }
+  #dropdown{
+    background-color: rgb(163, 180, 180);
+    text-decoration: none;
+    position: fixed;
+    right:10px;
+    padding: 5px;
+    margin-left: 10px;
+    color: rgba(0, 0, 0, 0.817);
+  }
+  #nav:focus-within #home-nav{
+    display:block;
+  }
+  .About,.Skills,.Timeline,.Projects,.Interests,.Competitions{
+    position: fixed;
+    right:10px;
+    height:20px;
+    background-color: aqua;
+    text-decoration: none;
+    padding: 5px;
+    margin-left: 10px;
+    display: block;
+    color: rgba(0, 0, 0, 0.817);
+  }
+  .About:active,.Skills:active,.Timeline:active,.Projects:active,.Interests:active,.Competitions:active{
+    position: fixed;
+    right:10px;
+    height:20px;
+    background-color:rgb(24, 223, 253);
+    text-decoration: none;
+    padding: 5px;
+    margin-left: 10px;
+    color: black;
+  }
+  .About{
+    top:30px;
+  }
+  .Skills{
+    top:65px;
+  }
+  .Timeline{
+    top:100px;
+  }
+  .Projects{
+    top:135px;
+  }
+  .Interests{
+    top:170px;
+  }
+  .Competitions{
+    top:205px;
+  }
+  #about-text{
+    position:fixed;
+    top:50%;
+    margin: 10px;
+  }
+}
+
+
+#about-mid{
+  position: fixed;
+  top:100px;
+}
+
+#skills-mid{
+  position: fixed;
+  top:30%;
+  margin: 10px;
+}
+#timeline-mid{
+  position: fixed;
+  top:100px;
+}
+#projects-mid{
+  position: fixed;
+  top:100px;
+}
+#interests-mid{
+  position: fixed;
+  top:30%;
+  margin:10px;
+}
+#competitions-mid{
+  position: fixed;
+  top:100px;
+}
+
+#icon-copyright{
+  position: fixed;
+  bottom:0px;
+  left: 40%;
+}
+#footer{
+  position: fixed;
+  bottom:15px;
+  width:100%;
+  z-index:1;
+  text-align: center;
+}
