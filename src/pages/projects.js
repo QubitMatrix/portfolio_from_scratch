@@ -1,0 +1,4 @@
+import React from "react";
+export default function Projects(){
+    return(<div id="projects-mid"><a href="https://github.com/QubitMatrix/Nebula" className="projects-links" target="_blank"><h3>Nebula</h3></a><span>A virtual voice-based PC assistant using python's speech recognition module.<br/>Python | Speech Recognition | Personal Assistant</span><br/><br/><a href="https://github.com/QubitMatrix/Playfair-Cipher" className="projects-links" target="_blank"><h3>Playfair Cipher</h3></a><span>Implementation of <a className="wiki-details" href="https://en.wikipedia.org/wiki/Playfair_cipher" target="_blank">Playfair Cipher</a> which is a symmetric encryption technique.<br/>C | Encryption | Ciphers</span><br/><br/><a href="https://github.com/QubitMatrix/EventZen" className="projects-links" target="_blank"><h3>EventZen</h3></a><span>An all-round website to make hosting an event easier.<br/>Javascript | MERN | Web Dev | HTML | CSS</span></div>)
+}
