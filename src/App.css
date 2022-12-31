@@ -153,6 +153,7 @@ body{
 #about-mid{
   position: fixed;
   top:100px;
+  margin:10px;
 }
 
 #skills-mid{
@@ -167,6 +168,7 @@ body{
 #projects-mid{
   position: fixed;
   top:100px;
+  margin:10px;
 }
 #interests-mid{
   position: fixed;
@@ -176,12 +178,18 @@ body{
 #competitions-mid{
   position: fixed;
   top:100px;
+  margin:10px;
+  top:30%;
 }
 
 #icon-copyright{
   position: fixed;
   bottom:0px;
-  left: 40%;
+  width: 100%;
+  text-align: center;
+}
+.projects-links{
+  color:black;
 }
 #footer{
   position: fixed;
