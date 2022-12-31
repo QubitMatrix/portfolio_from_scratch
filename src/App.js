@@ -37,7 +37,7 @@ function App(){
   class Footer extends React.Component
   {
     render(){
-      return(<footer id="footer"><span> Get connected:</span><br/><a href="#" target="_blank"><img src="https://img.icons8.com/color/48/000000/linkedin.png"></img></a><a href="https://github.com/QubitMatrix" target="_blank"><img src="https://img.icons8.com/color/48/000000/github.png"></img></a><a href="#"><img src="https://img.icons8.com/color/48/000000/gmail.png"></img></a><br/><span>&copy;Preethi. M</span></footer>)
+      return(<footer id="footer"><span> Get connected:</span><br/><a href="#" target="_blank"><img src="https://img.icons8.com/color/48/000000/linkedin.png"></img></a><a href="https://github.com/QubitMatrix" target="_blank"><img src="https://img.icons8.com/material-outlined/48/null/github.png"/></a><a href="#"><img src="https://img.icons8.com/color/48/000000/gmail.png"></img></a><br/><span>&copy;Preethi. M</span></footer>)
     }
   }
   return(<div>
