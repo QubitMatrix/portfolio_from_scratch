@@ -37,10 +37,15 @@
   }
 }
 
+
 body{
   background-color: #c6f3ff;
   font-family: 'Courier New', Courier, monospace;
 }
+.projects-links{
+  color:black;
+}
+
 #header{
   position:fixed;
   top:30px;
@@ -56,6 +61,52 @@ body{
 #home-nav{
   position: fixed;
   right:100px;
+}
+#about-mid{
+  position: fixed;
+  top:100px;
+  margin:10px;
+}
+
+#skills-mid{
+  position: fixed;
+  top:30%;
+  margin: 10px;
+}
+#timeline-mid{
+  position: fixed;
+  top:100px;
+}
+#projects-mid{
+  position: fixed;
+  top:150px;
+  margin:10px;
+}
+#interests-mid{
+  position: fixed;
+  top:30%;
+  margin:10px;
+}
+#competitions-mid{
+  position: fixed;
+  top:100px;
+  margin:10px;
+  top:30%;
+}
+
+#icon-copyright{
+  position: fixed;
+  bottom:0px;
+  width: 100%;
+  text-align: center;
+}
+
+#footer{
+  position: fixed;
+  bottom:15px;
+  width:100%;
+  z-index:1;
+  text-align: center;
 }
 
 @media screen and (min-width:800px) {
@@ -148,53 +199,107 @@ body{
     margin: 10px;
   }
 }
-
-
-#about-mid{
-  position: fixed;
-  top:100px;
-  margin:10px;
+@media (prefers-color-scheme:dark) {
+  body{
+    background-color: rgb(24, 49, 61);
+    color:rgb(252, 249, 249);
+  }
+  a,.projects-links{
+    color:rgb(187, 217, 239);
+  }
+  a:hover,.projects-links:hover{
+    color:rgb(152, 192, 221);
+  }
+  
 }
 
-#skills-mid{
-  position: fixed;
-  top:30%;
-  margin: 10px;
+@media screen and (min-width:800px) and (prefers-color-scheme:dark) {
+  #dropdown{
+    display:None;
+  }
+  #nav-buttons{
+    height:50px;
+    background-color: rgb(9, 90, 90);
+    border-radius: 30px 60px;
+    text-decoration: none;
+    padding: 10px;
+    margin-left: 10px;
+    color: rgb(207, 206, 206);
+  }
+  #nav-buttons:hover{
+    height:50px;
+    background-color:rgb(14, 119, 119);
+    border-radius: 30px 60px;
+    text-decoration: none;
+    padding: 10px;
+    margin-left: 10px;
+    color: rgb(207, 206, 206);
+  }
+  #about-text{
+    position:fixed;
+    left:50%;
+    top:35%;
+    margin: 10px;
+  }
 }
-#timeline-mid{
-  position: fixed;
-  top:100px;
-}
-#projects-mid{
-  position: fixed;
-  top:100px;
-  margin:10px;
-}
-#interests-mid{
-  position: fixed;
-  top:30%;
-  margin:10px;
-}
-#competitions-mid{
-  position: fixed;
-  top:100px;
-  margin:10px;
-  top:30%;
-}
-
-#icon-copyright{
-  position: fixed;
-  bottom:0px;
-  width: 100%;
-  text-align: center;
-}
-.projects-links{
-  color:black;
-}
-#footer{
-  position: fixed;
-  bottom:15px;
-  width:100%;
-  z-index:1;
-  text-align: center;
+@media screen and (max-width:800px) and (prefers-color-scheme:dark){
+  #home-nav{
+    display: none;
+  }
+  #dropdown{
+    background-color: rgb(163, 180, 180);
+    text-decoration: none;
+    position: fixed;
+    right:10px;
+    padding: 5px;
+    margin-left: 10px;
+    color: rgba(0, 0, 0, 0.817);
+  }
+  #nav:focus-within #home-nav{
+    display:block;
+  }
+  .About,.Skills,.Timeline,.Projects,.Interests,.Competitions{
+    position: fixed;
+    right:10px;
+    height:20px;
+    background-color:rgb(9, 90, 90);
+    text-decoration: none;
+    padding: 5px;
+    margin-left: 10px;
+    display: block;
+    color:  rgb(207, 206, 206);
+  }
+  .About:active,.Skills:active,.Timeline:active,.Projects:active,.Interests:active,.Competitions:active{
+    position: fixed;
+    right:10px;
+    height:20px;
+    background-color:rgb(14, 119, 119);
+    text-decoration: none;
+    padding: 5px;
+    margin-left: 10px;
+    color:rgb(207, 206, 206);
+  }
+  .About{
+    top:30px;
+  }
+  .Skills{
+    top:65px;
+  }
+  .Timeline{
+    top:100px;
+  }
+  .Projects{
+    top:135px;
+  }
+  .Interests{
+    top:170px;
+  }
+  .Competitions{
+    top:205px;
+  }
+  #about-text{
+    position:fixed;
+    top:50%;
+    margin: 10px;
+  }
 }
