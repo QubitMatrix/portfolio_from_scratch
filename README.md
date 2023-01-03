@@ -6,9 +6,13 @@ A portfolio website
 - Interests
 - Competitions
 - Projects
-- Timeline
+- Blog
 ### Languages and Frameworks used:
 - Javascript
 - CSS
 - React 
 - HTML
+
+### Features:
+- Responsive UI for all devices
+- Browser's prefered color scheme used
