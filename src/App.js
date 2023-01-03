@@ -1,17 +1,16 @@
 import './App.css'
 import React from 'react'
-import ReactDOM from 'react-dom'
 import { BrowserRouter as Router,Route,Routes} from 'react-router-dom'
 import {Link} from 'react-router-dom'
 import About from './pages/about'
 import Skills from './pages/skills'
-import Timeline from './pages/timeline'
+import Blog from './pages/blog'
 import Projects from './pages/projects'
 import Competitions from './pages/competitions'
 import Interests from './pages/interests'
 function App(){
-  var arr=['skills','timeline','projects','interests','competitions']
-  var names=['Skills','Timeline','Projects','Interests','Competitions']
+  var arr=['skills','blog','projects','interests','competitions']
+  var names=['Skills','Blog','Projects','Interests','Competitions']
   class Logo extends React.Component
   {
     render(){
@@ -37,7 +36,7 @@ function App(){
   class Footer extends React.Component
   {
     render(){
-      return(<footer id="footer"><span> Get connected:</span><br/><a href="#" target="_blank"><img src="https://img.icons8.com/color/48/000000/linkedin.png"></img></a><a href="https://github.com/QubitMatrix" target="_blank"><img src="https://img.icons8.com/material-outlined/48/null/github.png"/></a><a href="#"><img src="https://img.icons8.com/color/48/000000/gmail.png"></img></a><br/><span>&copy;Preethi. M</span></footer>)
+      return(<footer id="footer"><span> Get connected</span><br/><a href="https://www.linkedin.com/in/preethim2403/" target="_blank"><img src="https://img.icons8.com/color/48/000000/linkedin.png" alt="linkedln icon"></img></a><a href="https://github.com/QubitMatrix" target="_blank"><img className="github-img" src="https://img.icons8.com/material-outlined/48/null/github.png" alt="github icon"/></a><a href="mailto:preethi13m@gmail.com"><img src="https://img.icons8.com/color/48/000000/gmail.png" alt="gmail icon"/></a><br/><span>&copy;Preethi. M</span></footer>)
     }
   }
   return(<div>
@@ -47,7 +46,7 @@ function App(){
       <Routes>
         <Route exact path="/" element={<About/>}/>
         <Route path="/skills" element={<Skills/>}/>
-        <Route path="/timeline" element={<Timeline/>}/>
+        <Route path="/blog" element={<Blog/>}/>
         <Route path="/projects" element={<Projects/>}/>
         <Route path="/competitions" element={<Competitions/>}/>
         <Route path="/interests" element={<Interests/>}/>
