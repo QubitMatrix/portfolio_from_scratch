@@ -13,8 +13,9 @@ body{
 #header{
   position:fixed;
   top:30px;
+  background-color: rgb(198, 243, 255) ;
   width:100%;
-  z-index:1;
+  z-index:2;
 }
 #logo-img{
   width:50px;
@@ -39,6 +40,13 @@ body{
 #blog-mid{
   position: fixed;
   top:100px;
+}
+#ds-blog-mid{
+  position:relative;
+  top:100px;
+  margin:30px;
+  overflow:auto;
+  z-index: -1;
 }
 #projects-mid{
   position: fixed;
@@ -66,10 +74,12 @@ body{
 
 #footer{
   position: fixed;
-  bottom:15px;
+  margin:15px;
+  bottom:-15px;
   width:100%;
   z-index:1;
   text-align: center;
+  background-color: rgb(198, 243, 255) ;
 }
 
 @media screen and (min-width:800px) {
@@ -185,6 +195,15 @@ body{
   }
   a:hover,.projects-links:hover{
     color:rgb(152, 192, 221);
+  }
+  #footer{
+    position: fixed;
+    margin:15px;
+    bottom:-15px;
+    width:100%;
+    z-index:1;
+    text-align: center;
+    background-color: rgb(24, 49, 61) ;
   }
 }
 
