@@ -8,6 +8,7 @@ import Blog from './pages/blog'
 import Projects from './pages/projects'
 import Competitions from './pages/competitions'
 import Interests from './pages/interests'
+import DSBlog from './pages/ds_blog'
 function App(){
   var arr=['skills','blog','projects','interests','competitions']
   var names=['Skills','Blog','Projects','Interests','Competitions']
@@ -50,6 +51,7 @@ function App(){
         <Route path="/projects" element={<Projects/>}/>
         <Route path="/competitions" element={<Competitions/>}/>
         <Route path="/interests" element={<Interests/>}/>
+        <Route path="/blog/ds_blog" element={<DSBlog/>}/>
       </Routes>
     </Router>
   </div>)
