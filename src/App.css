@@ -5,6 +5,7 @@
 body{
   background-color: #c6f3ff;
   font-family: 'Courier New', Courier, monospace;
+  overflow:hidden;
 }
 .projects-links{
   color:black;
@@ -42,11 +43,29 @@ body{
   top:100px;
 }
 #ds-blog-mid{
-  position:relative;
-  top:100px;
+  position:fixed;
+  width:95%;
+  top:60px;
+  bottom:60px;
   margin:30px;
-  overflow:auto;
+  padding:10px;
+  background-color: rgb(159, 224, 252);
+  border: 1px solid black;
+  overflow-y:scroll;
   z-index: -1;
+}
+tr,td,th{
+  border:rgb(19, 119, 202) solid 2px;
+  text-align: center;
+  padding: 10px;
+}
+#complexity-table-list{
+  border: rgb(12, 100, 172) solid 3.5px;
+  border-collapse: collapse;
+}
+#dsa-img,#bt-bst-img,#classification-img,#stack-img,#queue-img,#trie-img,#btree-img,#graph-img{
+  width:350px;
+  height:200px;
 }
 #projects-mid{
   position: fixed;
@@ -204,6 +223,27 @@ body{
     z-index:1;
     text-align: center;
     background-color: rgb(24, 49, 61) ;
+  }
+  #ds-blog-mid{
+    position:fixed;
+    width:95%;
+    top:60px;
+    bottom:60px;
+    margin:30px;
+    padding:10px;
+    background-color: rgb(1, 57, 81);
+    border: 1px solid black;
+    overflow-y:scroll;
+    z-index: -1;
+  }
+  tr,td,th{
+    border:rgb(8, 66, 113) solid 2px;
+    text-align: center;
+    padding: 10px;
+  }
+  #complexity-table-list{
+    border: rgb(8, 66, 113) solid 3.5px;
+    border-collapse: collapse;
   }
 }
 
