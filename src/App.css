@@ -14,7 +14,6 @@ body{
 #header{
   position:fixed;
   top:30px;
-  background-color: rgb(198, 243, 255) ;
   width:100%;
   z-index:2;
 }
@@ -37,22 +36,26 @@ body{
   position: fixed;
   top:30%;
   margin: 10px;
+  margin-left:30px;
 }
 #blog-mid{
   position: fixed;
   top:100px;
+  margin: 20px;
+  margin-left:30px;
 }
 #ds-blog-mid{
   position:fixed;
-  width:95%;
+  left:-10px;
+  right:-10px;
   top:60px;
-  bottom:60px;
+  bottom:0px;
   margin:30px;
   padding:10px;
   background-color: rgb(159, 224, 252);
   border: 1px solid black;
   overflow-y:scroll;
-  z-index: -1;
+  z-index: 1;
 }
 tr,td,th{
   border:rgb(19, 119, 202) solid 2px;
@@ -71,16 +74,21 @@ tr,td,th{
   position: fixed;
   top:150px;
   margin:10px;
+  margin-left:30px;
+
 }
 #interests-mid{
   position: fixed;
   top:30%;
   margin:10px;
+  margin-left:30px;
+
 }
 #competitions-mid{
   position: fixed;
   top:100px;
   margin:10px;
+  margin-left:30px;
   top:30%;
 }
 
@@ -94,11 +102,10 @@ tr,td,th{
 #footer{
   position: fixed;
   margin:15px;
-  bottom:-15px;
+  bottom:0px;
   width:100%;
   z-index:1;
   text-align: center;
-  background-color: rgb(198, 243, 255) ;
 }
 
 @media screen and (min-width:800px) {
@@ -215,35 +222,16 @@ tr,td,th{
   a:hover,.projects-links:hover{
     color:rgb(152, 192, 221);
   }
-  #footer{
-    position: fixed;
-    margin:15px;
-    bottom:-15px;
-    width:100%;
-    z-index:1;
-    text-align: center;
-    background-color: rgb(24, 49, 61) ;
-  }
+  
   #ds-blog-mid{
-    position:fixed;
-    width:95%;
-    top:60px;
-    bottom:60px;
-    margin:30px;
-    padding:10px;
     background-color: rgb(1, 57, 81);
-    border: 1px solid black;
-    overflow-y:scroll;
-    z-index: -1;
+
   }
   tr,td,th{
     border:rgb(8, 66, 113) solid 2px;
-    text-align: center;
-    padding: 10px;
   }
   #complexity-table-list{
     border: rgb(8, 66, 113) solid 3.5px;
-    border-collapse: collapse;
   }
 }
 
@@ -251,96 +239,25 @@ tr,td,th{
   .github-img{
     filter:invert(1);
   }
-  
-  #dropdown{
-    display:None;
-  }
   #nav-buttons{
-    height:50px;
     background-color: rgb(9, 90, 90);
-    border-radius: 30px 60px;
-    text-decoration: none;
-    padding: 10px;
-    margin-left: 10px;
     color: rgb(207, 206, 206);
   }
   #nav-buttons:hover{
-    height:50px;
     background-color:rgb(14, 119, 119);
-    border-radius: 30px 60px;
-    text-decoration: none;
-    padding: 10px;
-    margin-left: 10px;
     color: rgb(207, 206, 206);
-  }
-  #about-text{
-    position:fixed;
-    left:50%;
-    top:35%;
-    margin: 10px;
   }
 }
 @media screen and (max-width:800px) and (prefers-color-scheme:dark){
-  #home-nav{
-    display: none;
-  }
   .github-img{
     filter:invert(1);
   }
-  #dropdown{
-    background-color: rgb(163, 180, 180);
-    text-decoration: none;
-    position: fixed;
-    right:10px;
-    padding: 5px;
-    margin-left: 10px;
-    color: rgba(0, 0, 0, 0.817);
-  }
-  #nav:focus-within #home-nav{
-    display:block;
-  }
   .About,.Skills,.Blog,.Projects,.Interests,.Competitions{
-    position: fixed;
-    right:10px;
-    height:20px;
     background-color:rgb(9, 90, 90);
-    text-decoration: none;
-    padding: 5px;
-    margin-left: 10px;
-    display: block;
     color:  rgb(207, 206, 206);
   }
   .About:active,.Skills:active,.Blog:active,.Projects:active,.Interests:active,.Competitions:active{
-    position: fixed;
-    right:10px;
-    height:20px;
     background-color:rgb(14, 119, 119);
-    text-decoration: none;
-    padding: 5px;
-    margin-left: 10px;
     color:rgb(207, 206, 206);
-  }
-  .About{
-    top:30px;
-  }
-  .Skills{
-    top:65px;
-  }
-  .Blog{
-    top:100px;
-  }
-  .Projects{
-    top:135px;
-  }
-  .Interests{
-    top:170px;
-  }
-  .Competitions{
-    top:205px;
-  }
-  #about-text{
-    position:fixed;
-    top:50%;
-    margin: 10px;
   }
 }
