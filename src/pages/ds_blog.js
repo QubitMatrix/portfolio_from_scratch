@@ -114,8 +114,8 @@ export default function DSBlog (){
         DFS:<br/>Check connectivity of graph, check if path exists between two vertices, check number of components in the graph.<br/>
         BFS:<br/>Helps to get the shortest path between two vertices and can do everything that a DFS traversal can do.<br/><br/>
         <u>Uses:</u><br/>Graphs can be used in computer networks, social analysis and shortest path problems.</p><img src={require("../assets/graph.png")} alt="graph" id="graph-img"/><br/><br/><br/><br/>
-        Data structures by itself is a very extensive topic and as stated earlier I have tried my best to keep it short and to the point but data structures have a lot more to offer and everything mentioned above is just a bird's view of the vast world of data structures.<br/>
-        Kudos to those who had the patience to have read the entire post. I would like to conclude with a famous quote by Linus Torvalds.<br/><em>"Bad programmers worry about the code. Good programmers worry about data structures and their relationships."</em>
+        Data structures by itself is a very extensive topic and as stated earlier I have tried my best to keep it short and to the point but data structures have a lot more to offer and everything mentioned above is just a bird's view of the vast world of data structures.<br/><br/>
+        Kudos to those who had the patience to read the entire post.<br/> <br/><br/>I would like to conclude with a famous quote by Linus Torvalds.<br/><br/><em>"Bad programmers worry about the code. Good programmers worry about data structures and their relationships."</em>
     <br/><br/><br/><br/><br/><br/>
     </div>);
     
