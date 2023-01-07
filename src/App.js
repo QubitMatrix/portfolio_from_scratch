@@ -1,6 +1,7 @@
 import './App.css'
 import React from 'react'
-import { BrowserRouter as Router,Route,Routes} from 'react-router-dom'
+import { HashRouter as Router} from 'react-router-dom'
+import { Route,Routes } from 'react-router-dom'
 import {Link} from 'react-router-dom'
 import About from './pages/about'
 import Skills from './pages/skills'
