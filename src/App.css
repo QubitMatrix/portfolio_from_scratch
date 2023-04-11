@@ -72,24 +72,23 @@ tr,td,th{
 }
 #projects-mid{
   position: fixed;
-  top:150px;
+  top:20%;
   margin:10px;
   margin-left:30px;
 
 }
 #interests-mid{
   position: fixed;
-  top:30%;
+  top:20%;
   margin:10px;
   margin-left:30px;
 
 }
 #competitions-mid{
   position: fixed;
-  top:100px;
   margin:10px;
   margin-left:30px;
-  top:30%;
+  top:20%;
 }
 
 #icon-copyright{
