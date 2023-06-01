@@ -10,6 +10,7 @@ import Projects from './pages/projects'
 import Competitions from './pages/competitions'
 import Interests from './pages/interests'
 import DSBlog from './pages/ds_blog'
+import ARPBlog from './pages/arp_blog'
 function App(){
   var arr=['skills','blog','projects','interests','competitions']
   var names=['Skills','Blog','Projects','Interests','Competitions']
@@ -53,6 +54,7 @@ function App(){
         <Route path="/competitions" element={<Competitions/>}/>
         <Route path="/interests" element={<Interests/>}/>
         <Route path="/blog/ds_blog" element={<DSBlog/>}/>
+        <Route path="/blog/arp_blog" element={<ARPBlog/>}/>
       </Routes>
     </Router>
   </div>)
