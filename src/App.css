@@ -57,10 +57,41 @@ body{
   overflow-y:scroll;
   z-index: 1;
 }
+#arp-blog-mid{
+  position:fixed;
+  left:-10px;
+  right:-10px;
+  top:60px;
+  bottom:0px;
+  margin:30px;
+  padding:10px;
+  background-color: rgb(159, 224, 252);
+  border: 1px solid black;
+  overflow-y:scroll;
+  z-index: 1;
+}
 tr,td,th{
   border:rgb(19, 119, 202) solid 2px;
   text-align: center;
   padding: 10px;
+}
+blockquote{
+  margin-left:0px;
+  margin-top:1px;
+  border-left:5px solid rgb(93, 199, 225);
+  background-color:rgb(1, 37, 53);
+  color:rgb(93, 199, 225);
+  padding-left:10px;
+  font-style: italic;
+}
+.code{
+  color:rgb(255, 166, 0);
+  font-weight: 600;
+  background-color: rgb(249, 230, 195);
+}
+.source_code{
+  background-color:rgb(11, 45, 59);
+  padding-left:10px;
 }
 #complexity-table-list{
   border: rgb(12, 100, 172) solid 3.5px;
@@ -223,6 +254,10 @@ tr,td,th{
   }
   
   #ds-blog-mid{
+    background-color: rgb(1, 57, 81);
+
+  }
+  #arp-blog-mid{
     background-color: rgb(1, 57, 81);
 
   }
