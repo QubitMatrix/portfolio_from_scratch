@@ -1,4 +1,10 @@
 import React from "react";
+function abc(){
+    var copy_ele=document.getElementById("copy_text")
+    document.querySelector("path").setAttribute("fill","green")
+    document.querySelector("path").setAttribute("d","M9 16.17l-4.17-4.17-1.42 1.42L9 19 21.59 6.41 20.17 5")
+    navigator.clipboard.writeText(copy_ele.innerText)
+}
 export default function ARPBlog(){
     return(
         <div id="arp-blog-mid">
@@ -72,7 +78,7 @@ export default function ARPBlog(){
                         Using other proprietary products like XArp
                     </li>
                     <li>
-                        Using the CLI: <br/><span class="code">arp -a</span><br/><br/>
+                        Using the CLI: <br/><span class="code">arp -a</span><br/>
                         <blockquote><span>If two IP's have same MAC address, it means the ARP cache has been compromised.</span></blockquote>
                     </li>
                 </ol>
@@ -143,7 +149,7 @@ export default function ARPBlog(){
             <span>Response Frame</span><br/>
             <img src="https://github.com/QubitMatrix/QubitMatrix/assets/60323193/66cab882-3db4-4e3b-a038-f3e79f403b82" alt="target wireshark response after forwarding" height="350px" width="650px"></img>
             <br/>
-            <blockquote><span>Note the `Redirect Host` showing that there is a change in the route</span></blockquote><br/>
+            <blockquote><span>Note the <span class="code">Redirect Host</span> showing that there is a change in the route</span></blockquote><br/>
             <h4>Attacker side</h4>
             <span>Request Frame</span><br/>
             <img src="https://github.com/QubitMatrix/QubitMatrix/assets/60323193/fe355f49-5242-448f-a96e-20920e2a8f91" alt="attacker wireshark request after forwarding" height="350px" width="650px"></img>
@@ -157,7 +163,11 @@ export default function ARPBlog(){
             <br/>
             
             <h4>Source Code</h4>
-        <pre class="source_code">
+            
+        <pre class="source_code" id="copy_text">
+            <svg id="copy_svg" onClick={abc} height="24" width="24" viewBox="0 0 24 24">
+                <path fill="white" d="M0 6.75C0 5.784.784 5 1.75 5h1.5a.75.75 0 0 1 0 1.5h-1.5a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-1.5a.75.75 0 0 1 1.5 0v1.5A1.75 1.75 0 0 1 9.25 16h-7.5A1.75 1.75 0 0 1 0 14.25ZM5 1.75C5 .784 5.784 0 6.75 0h7.5C15.216 0 16 .784 16 1.75v7.5A1.75 1.75 0 0 1 14.25 11h-7.5A1.75 1.75 0 0 1 5 9.25Zm1.75-.25a.25.25 0 0 0-.25.25v7.5c0 .138.112.25.25.25h7.5a.25.25 0 0 0 .25-.25v-7.5a.25.25 0 0 0-.25-.25Z"></path>
+            </svg>
             {
             `
 import socket
@@ -203,19 +213,20 @@ while(1):
             <ul>
                 <li>
                     <span class="code">socket.socket</span> creates a socket through which the information can be sent out and received.
-                </li>
+                </li><br/>
                 <li>
                     <span class="code">socket.SOCK_RAW</span> is an argument used to specify that raw sockets will be used.(This requires root privilage)
-                </li>
+                </li><br/>
                 <li>
                     <span class="code">socket.htons</span> converts a 16-bit host byte order into a network byte order.
-                </li>
+                </li><br/>
                 <li>
                     <span class="code">socket.inet_aton</span> converts an IPv4 address string into a 32-bit packed binary format.(socket.inet_pton can be used for IPv6 addresses)
                 </li>
             </ul>
             <blockquote><span>To carry out spoofing the attacker needs to get into the network and identify two devices. Here the target and its local DNS is used.</span><br/><br/>
-            <span>To get the IP of the local DNS check the /etc/resolv.conf file, with the IP its MAC can be found by running arp -a &lt;IP&gt;</span></blockquote>
+            <span>To get the IP of the local DNS check the <span class="code">/etc/resolv.conf</span> file, with the IP its MAC can be found by running <span class="code">arp -a &lt;IP&gt;</span></span></blockquote>
         </div>
+
     )
 }
