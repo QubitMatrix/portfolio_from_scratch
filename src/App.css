@@ -7,6 +7,7 @@ body{
   font-family: 'Courier New', Courier, monospace;
   overflow:hidden;
 }
+
 .projects-links{
   color:black;
 }
@@ -32,14 +33,7 @@ body{
   top:30px;
   margin:10px;
 }
-#skills-mid{
-  position: fixed;
-  top:30%;
-  margin: 10px;
-  margin-left:60px;
-  height:50%;
-  overflow: auto;
-}
+
 #blog-mid{
   position: fixed;
   top:30%;
@@ -191,6 +185,39 @@ blockquote{
     height:60%;
     overflow: auto;
   }
+  #skills-mid, #programming, #webdev, #database, #web_net, #tools-imgs
+  {
+    position: fixed;
+    padding-left:10px;
+    top:30%;
+    margin: 10px;
+    height:50%;
+    overflow: auto;
+  }
+  #skills-mid > #web_net > img
+  {
+    padding-left:7px;
+  }
+  #programming, #web_net
+  {
+    margin-left:100px;
+  }
+  #web_net
+  {
+    top:55%;
+  }
+  #database, #webdev
+  {
+    margin-left:480px;
+  }
+  #database
+  {
+    top:55%;
+  }
+  #tools-imgs
+  {
+    margin-left:850px;
+  }
 }
 @media screen and (max-width:800px) {
   #home-nav{
@@ -261,6 +288,16 @@ blockquote{
   }
   .source_code{
     max-width:300px;
+  }
+  #skills-mid
+  {
+    position: fixed;
+    padding-left:10px;
+    top:18%;
+    margin: 10px;
+    height:60%;
+    width: 90%;
+    overflow: auto;
   }
 }
 @media (prefers-color-scheme:dark) {
