@@ -36,9 +36,10 @@ body{
 
 #blog-mid{
   position: fixed;
-  top:30%;
+  top:10%;
   margin: 20px;
   margin-left:30px;
+  padding:100px;
 }
 #ds-blog-mid{
   position:fixed;
@@ -54,6 +55,19 @@ body{
   z-index: 1;
 }
 #arp-blog-mid{
+  position:fixed;
+  left:-10px;
+  right:-10px;
+  top:60px;
+  bottom:0px;
+  margin:30px;
+  padding:10px;
+  background-color: rgb(159, 224, 252);
+  border: 1px solid black;
+  overflow-y:scroll;
+  z-index: 1;
+}
+#waf-blog-mid{
   position:fixed;
   left:-10px;
   right:-10px;
@@ -317,6 +331,10 @@ blockquote{
 
   }
   #arp-blog-mid{
+    background-color: rgb(1, 57, 81);
+
+  }
+  #waf-blog-mid{
     background-color: rgb(1, 57, 81);
 
   }
