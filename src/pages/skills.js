@@ -16,7 +16,7 @@ export default function Skills()
                 <h3>Web and Network Security</h3>
                 <img src="https://img.icons8.com/color/48/000000/metasploit.png" />
                 <img src="https://img.icons8.com/color/48/000000/nmap.png" />
-                <img src="postman.png" width="48" height="48"/>
+                <img src="postman.jpg" width="48" height="48"/>
                 <img src="burpsuite.jpg" width="48" height="48"/>
                 <img src="wireshark.jpg" width="48" height="48"/>
             </div>
@@ -40,9 +40,9 @@ export default function Skills()
                 <img className="github-img" src="https://img.icons8.com/material-outlined/48/null/github.png" />
                 <img src="https://img.icons8.com/external-tal-revivo-filled-tal-revivo/48/null/external-vim-a-highly-configurable-text-editor-for-efficiently-creating-and-changing-any-kind-of-text-logo-filled-tal-revivo.png" />
                 <img src="https://img.icons8.com/color/48/null/visual-studio-code-2019.png" />
-                <img src="https://img.icons8.com/color/48/null/pycharm.png" />
                 <img src="https://img.icons8.com/color/48/null/bash.png" />
                 <img src="wsl.png" height="48px" width="48px" />
+                <img src="obsidian.jpg" height="48px" width="48px" />
             </div>
             <span id="icon-copyright">Icons used from <a href="https://icons8.com/" target="_blank">icons8.com</a></span>
         </div>
